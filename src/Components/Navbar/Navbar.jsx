@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
+
 const Navbar = () => {
   const [menu, openMenu] = useState(false);
   const [showMenu, setShowmenu] = useState(true);
@@ -12,11 +13,11 @@ const Navbar = () => {
           menu ? "block" : "hidden"
         }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
       >
-        <a href="#About">
+        
           <li className="text-md transition-all duration-300 p-1 md:p-0">
-            Resume
+            <button onClick={()=> window.open('/assets/SahilChettiar.pdf', "_blank", 'noopener,noreferrer')}> Resume </button>  
           </li>
-        </a>
+        
         <a href="#About">
           <li className="text-md transition-all duration-300 p-1 md:p-0">
             About
