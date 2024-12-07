@@ -26,9 +26,12 @@ const Home = () => {
         <a href="https://www.instagram.com/saahil_shetty09/" target='_blank'>  <p className="text-4xl mt-2"> <FaInstagram/> </p> </a>
         </div>
 
+        <a href="#Footer">
         <button className="mt-5 md:md-10 text-white py02 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
           Contact Me
         </button>
+        </a>
+        
       </div>
       <div>
         {/* <img className="" src={avatarImg} alt="" /> */}
