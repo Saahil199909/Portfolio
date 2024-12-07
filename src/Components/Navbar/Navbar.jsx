@@ -19,20 +19,8 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>Resume</button>
+            Resume
           </a>
-          {/* <button
-            onClick={() =>
-              window.open(
-                "/assets/SahilChettiar.pdf",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
-          >
-            {" "}
-            Resume{" "}
-          </button> */}
         </li>
 
         <a href="#About">
@@ -69,6 +57,10 @@ const Navbar = () => {
         <RiCloseLine
           size={30}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
+          onClick={() => {
+            openMenu(!menu);
+            setShowmenu(!showMenu);
+          }}
         />
       )}
     </nav>
